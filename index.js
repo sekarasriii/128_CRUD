@@ -9,6 +9,8 @@ app.get("/", (req, res) => {
     res.send("Hello World!");
 });
 
+const PORT = process.env.PORT || 3000;
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
@@ -16,9 +18,9 @@ app.listen(PORT, () => {
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: '12baplanGGG',
+    password: '@21baplanGGG',
     database: 'mahasiswa',
-    port: 3306
+    port: 3309
 });
 
 db.connect((err) => {
